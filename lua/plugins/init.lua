@@ -13,6 +13,18 @@ return {
     end,
   },
 
+  {
+    "mg979/vim-visual-multi",
+    branch = "master",
+    lazy = false
+  },
+
+  {
+    "pocco81/auto-save.nvim",
+    branch = "main",
+    lazy = false
+  }
+
   -- {
   -- 	"nvim-treesitter/nvim-treesitter",
   -- 	opts = {
