@@ -23,7 +23,46 @@ return {
     "pocco81/auto-save.nvim",
     branch = "main",
     lazy = false
-  }
+  },
+
+  {
+    "yioneko/nvim-vtsls"
+  },
+
+  {
+    "nvim-neotest/neotest",
+    dependencies = {
+      "nvim-neotest/nvim-nio",
+      "nvim-lua/plenary.nvim",
+      "antoinemadec/FixCursorHold.nvim",
+      "nvim-treesitter/nvim-treesitter",
+      "nvim-neotest/neotest-jest"
+    }
+  },
+
+  {
+    "ramilito/kubectl.nvim",
+    config = function()
+      require("kubectl").setup()
+    end,
+  },
+
+  {
+    "h4ckm1n-dev/kube-utils-nvim",
+    dependencies = { "nvim-telescope/telescope.nvim" },
+    lazy = true,
+    event = "VeryLazy"
+  },
+
+  {
+    "seblyng/roslyn.nvim",
+    ft = "cs",
+    ---@module 'roslyn.config'
+    ---@type RoslynNvimConfig
+    opts = {
+        -- your configuration comes here; leave empty for default settings
+    }
+  },
 
   -- {
   -- 	"nvim-treesitter/nvim-treesitter",
