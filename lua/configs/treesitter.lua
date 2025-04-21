@@ -1,16 +1,17 @@
 local options = {
   ensure_installed = {
     "bash",
-    "lua",
-    "luadoc",
-    "markdown",
+    "c_sharp",
     "go",
     "gomod",
     "gosum",
+    "json",
+    "lua",
+    "luadoc",
+    "markdown",
     "vim",
     "vimdoc",
     "yaml",
-    "json"
   },
 
   highlight = {

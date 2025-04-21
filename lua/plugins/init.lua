@@ -23,6 +23,18 @@ return {
     "pocco81/auto-save.nvim",
     branch = "main",
     lazy = false
+  },
+
+  {
+    "nvim-treesitter/nvim-treesitter",
+    opts = require "configs.treesitter"
+  },
+
+  {
+    "Omnisharp/omnisharp-vim",
+    branch = "master",
+    lazy = true,
+    opts = require "configs.omnisharp"
   }
 
   -- {

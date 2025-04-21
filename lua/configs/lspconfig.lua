@@ -9,6 +9,7 @@ local servers = {
   "cssls",
   "lua_ls",
   "gopls",
+  "omnisharp"
 }
 local nvlsp = require "nvchad.configs.lspconfig"
 
